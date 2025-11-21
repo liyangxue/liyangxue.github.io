@@ -64,6 +64,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+/* Header navigation links */
 .header-links a {
   display: inline-block;
   margin-right: 0.75rem;
@@ -71,6 +72,16 @@ a:hover {
   font-size: 0.95rem;
   padding-bottom: 0.1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+  /* FIXED COLOR: bright white links */
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+.header-links a:hover {
+  opacity: 1;
+  border-bottom: 1px solid #ffffff;
+  text-decoration: none;
 }
 
 .header-links a:last-child {
@@ -190,7 +201,7 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
-/* Responsive tweaks */
+/* Responsive */
 @media (max-width: 720px) {
   .header-content {
     flex-direction: column;
