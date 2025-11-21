@@ -1,0 +1,203 @@
+/* Basic reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f7f7fb;
+}
+
+a {
+  color: #1d5fbf;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Header */
+.site-header {
+  background: linear-gradient(135deg, #1d5fbf, #4b8bd4);
+  color: #fff;
+  padding: 2.5rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+  opacity: 0.95;
+}
+
+.short-bio {
+  font-size: 0.98rem;
+  max-width: 540px;
+  margin-bottom: 1rem;
+}
+
+.header-links a {
+  display: inline-block;
+  margin-right: 0.75rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding-bottom: 0.1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.header-links a:last-child {
+  margin-right: 0;
+}
+
+.portrait-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 2.5rem;
+  background: #fff;
+  padding: 1.75rem 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Cards (for research projects) */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border-radius: 12px;
+  border: 1px solid #e3e6f0;
+  padding: 1rem;
+  background: #fafbff;
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Publications */
+.pub-list {
+  margin-left: 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.pub-list li {
+  margin-bottom: 0.85rem;
+}
+
+.pub-authors,
+.pub-venue,
+.pub-links {
+  font-size: 0.92rem;
+}
+
+.pub-venue {
+  font-style: italic;
+}
+
+/* Lists */
+.list {
+  list-style: disc;
+  margin-left: 1.3rem;
+  margin-top: 0.75rem;
+}
+
+.list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  border: none;
+  background: #1d5fbf;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.button:hover {
+  text-decoration: none;
+  filter: brightness(1.05);
+}
+
+/* Contact */
+.contact-list {
+  list-style: none;
+  margin-top: 0.75rem;
+}
+
+.contact-list li {
+  margin-bottom: 0.35rem;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555;
+  padding: 1rem 0 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portrait-placeholder {
+    align-self: flex-start;
+  }
+}
