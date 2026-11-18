@@ -1,165 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Liyang Xue | NLP & Health Informatics</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Personal website of Liyang Xue, Ph.D. candidate at Rutgers University focusing on NLP, health informatics, and automated detection of stigmatizing language in electronic health records."
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183f4a">
+  <title>Liyang Xue | Clinical NLP and Health Informatics</title>
+  <meta name="description" content="Liyang Xue is a postdoctoral researcher at the University of Tennessee Health Science Center studying clinical language, patient context, and AI for health.">
+  <link rel="canonical" href="https://liyangxue.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://liyangxue.github.io/">
+  <meta property="og:title" content="Liyang Xue | Clinical NLP and Health Informatics">
+  <meta property="og:description" content="Research, publications, teaching, and academic service. Postdoctoral Researcher at the University of Tennessee Health Science Center.">
+  <meta property="og:image" content="https://liyangxue.github.io/assets/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Liyang Xue","url":"https://liyangxue.github.io/","jobTitle":"Postdoctoral Researcher","affiliation":{"@type":"Organization","name":"University of Tennessee Health Science Center"},"email":"mailto:lxue1@uthsc.edu","sameAs":["https://orcid.org/0000-0003-2908-9072","https://github.com/liyangxue"],"knowsAbout":["Clinical natural language processing","Health informatics","Clinical documentation","Responsible artificial intelligence"]}</script>
 </head>
-<body>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="container header-content">
-      <div>
-        <h1 class="name">Liyang Xue</h1>
-        <p class="tagline">
-          Ph.D. Candidate · NLP & Health Informatics · Rutgers University
-        </p>
-        <p class="short-bio">
-          I develop natural language processing methods to detect and understand
-          stigmatizing language in electronic health records, with a focus on
-          multi-stage transfer learning, responsible AI, and fairness for
-          gender-expansive patients.
-        </p>
-        <div class="header-links">
-          <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
-          <a href="#teaching">Teaching</a>
-          <a href="#cv">CV</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-      <div class="portrait-placeholder">
-        <!-- Replace with an <img> tag if you have a headshot -->
-        <span>Photo</span>
-      </div>
+    <div class="header-inner">
+      <a class="site-name" href="#top">Liyang Xue</a>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+      <nav id="primary-nav" aria-label="Main navigation">
+        <a href="#publications">Publications</a><a href="#datasets">Data</a><a href="#research">Research</a><a href="#teaching">Teaching</a><a href="#service">Service</a>
+        <a class="nav-cv" href="assets/Liyang_Xue_CV.pdf" target="_blank" rel="noopener">CV</a>
+      </nav>
     </div>
   </header>
-
-  <main class="container">
-    <section id="research" class="section">
-      <h2>Research</h2>
-      <p>
-        My research lies at the intersection of natural language processing,
-        health informatics, and responsible AI. I focus on automated detection
-        of stigmatizing language in clinical notes, multi-stage transfer
-        learning, and fairness-aware evaluation across demographic groups.
-      </p>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Automated Detection of Stigmatizing Language in EHRs</h3>
-          <p>
-            Developing multi-stage transfer learning pipelines to identify
-            stigmatizing language in electronic health records, integrating
-            semantic, clinical, and task-specific adaptation to capture subtle
-            tone and context across long clinical narratives.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Stigmatizing Language Toward Gender-Expansive Patients</h3>
-          <p>
-            Building annotated datasets and models to characterize how
-            Gender-expansive patients are described in clinical documentation,
-            including misgendering, descriptor-level stigma, and demographic
-            differences in model performance.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Responsible & Fair Clinical NLP</h3>
-          <p>
-            Evaluating NLP models across demographic subgroups, using
-            odds ratios, subgroup performance metrics, and multi-objective
-            optimization to balance overall accuracy and fairness.
-          </p>
-        </article>
+  <div class="page-layout">
+    <aside class="profile" aria-label="Profile and contact">
+      <div class="profile-rule" aria-hidden="true"></div>
+      <h1>Liyang Xue</h1>
+      <p class="profile-role">Postdoctoral Researcher</p>
+      <p class="profile-affiliation">Center for Biomedical Informatics<br>University of Tennessee<br>Health Science Center</p>
+      <p class="profile-location">Memphis, Tennessee</p>
+      <a id="contact" class="email" href="mailto:lxue1@uthsc.edu">lxue1@uthsc.edu</a>
+      <a id="cv" class="cv-button" href="assets/Liyang_Xue_CV.pdf" target="_blank" rel="noopener">Curriculum vitae <span>PDF</span></a>
+      <div class="profile-links" aria-label="Academic profiles">
+        <a href="https://scholar.google.com/citations?user=90p5U70AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://github.com/liyangxue" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://orcid.org/0000-0003-2908-9072" target="_blank" rel="noopener">ORCID</a>
       </div>
-    </section>
-
-    <section id="publications" class="section">
-      <h2>Selected Publications</h2>
-      <p>
-        For a complete and up-to-date list, see my
-        <a href="https://scholar.google.com/citations?user=90p5U70AAAAJ=en" target="_blank" rel="noopener">Google Scholar</a>.
-      </p>
-
-      <ol class="pub-list">
-        <li>
-          <strong>Liyang Xue, A M Muntasir Rahman, Charles R Senteio, Vivek K Singh, Automated detection of stigmatizing language in Electronic Health Records (EHRs) using a multi-stage transfer learning approach, Journal of the American Medical Informatics Association, 2025;, ocaf193, https://doi.org/10.1093/jamia/ocaf193</strong><br />
-        </li>
-
-        <li>
-          <strong>Ahmed, E., Xue, L., Sankalp, A., Kong, H., Matos, A., Silenzio, V., & Singh, V. K. (2023). Predicting Loneliness through Digital Footprints on Google and YouTube. Electronics, 12(23), 4821. https://doi.org/10.3390/electronics12234821</strong><br />
-        </li>
-      </ol>
-    </section>
-
-    <section id="teaching" class="section">
-      <h2>Teaching & Mentoring</h2>
-      <p>
-        I have served as a lecturer for a data analytics course at Rutgers University and
-        as a TA for many undergraduate and graduate-level courses.
-      </p>
-
-      <ul class="list">
-        <li>
-          <strong>Part Time Lecturer, Data Analytics (Rutgers University)</strong><br />
-          Guided students through data curation, regression analysis, and interpretation of results for real-world policy questions.
-        </li>
-        <li>
-          <strong>Mentoring</strong><br />
-          Informally mentor students interested in NLP, health informatics, and responsible AI, providing feedback on project design and analysis.
-        </li>
-      </ul>
-    </section>
-
-    <section id="cv" class="section">
-      <h2>Curriculum Vitae</h2>
-      <p>
-        You can download my full CV here:
-      </p>
-      <p>
-        <!-- After you upload your CV to /cv/Liyang_Xue_CV.pdf, this link will work -->
-        <a class="button" href="cv/Liyang_Xue_CV.pdf" target="_blank" rel="noopener">
-          Download CV (PDF)
-        </a>
-      </p>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>
-        I am currently on the academic job market and open to opportunities in
-        NLP, health informatics, and responsible AI.
-      </p>
-
-      <ul class="contact-list">
-        <li><strong>Email:</strong> <a href="liyang.xue@rutgers.edu">liyang.xue@rutgers.edu</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/liyangxue/" target="_blank" rel="noopener">LinkedIn Profile</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/liyangxue" target="_blank" rel="noopener">github.com/liyangxue</a></li>
-        <li><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=90p5U70AAAAJ=en" target="_blank" rel="noopener">Google Scholar</a></li>
-      </ul>
-    </section>
-
-    <footer class="site-footer">
-      <p>
-        © <span id="year"></span> Liyang Xue · Built with GitHub Pages
-      </p>
-    </footer>
-  </main>
-
-  <script>
-    // Set current year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+      <div class="education-summary">
+        <h2>Education</h2>
+        <p><strong>PhD, Library and Information Science</strong><span>Rutgers University, 2026</span></p>
+        <p><strong>MS, Business Analytics</strong><span>Syracuse University, 2021</span></p>
+        <p><strong>BS, Physics</strong><span>University of Washington, 2019</span></p>
+      </div>
+    </aside>
+    <main id="main">
+      <section class="introduction" aria-labelledby="intro-title">
+        <p class="section-kicker">Clinical NLP and health informatics</p>
+        <h2 id="intro-title">How health information represents people, and how AI uses it.</h2>
+        <p>I study clinical language, documentation equity, and the evaluation of AI for health. My work asks how records describe patients, what context is lost when those records are summarized, and how we can check the evidence behind a model’s answer.</p>
+        <p>I am a postdoctoral researcher at the University of Tennessee Health Science Center. I received my PhD in Library and Information Science from Rutgers University in January 2026, where I worked with Vivek Singh in the Behavioral Informatics Lab.</p>
+        <p class="job-market">I am on the 2026–2027 faculty job market. Please <a href="mailto:lxue1@uthsc.edu">get in touch</a> about research and teaching opportunities.</p>
+      </section>
+      <section id="publications" class="content-section" aria-labelledby="publications-title">
+        <div class="section-heading"><h2 id="publications-title">Publications</h2><a class="secondary-link" href="assets/publications.bib" download>All BibTeX</a></div>
+        <div class="publication-list">
+          <article class="publication">
+            <p class="paper-meta"><span>2026</span><span>Journal of Medical Internet Research</span></p>
+            <h3><a href="https://doi.org/10.2196/91089" target="_blank" rel="noopener">Stigmatizing Language in Gender-Expansive Patient Records: Corpus Development, Disparity Analysis, and Natural Language Processing-Based Detection Study</a></h3>
+            <p class="authors"><strong>Liyang Xue</strong>, Mary Chayko, Vivek K. Singh</p>
+            <p class="paper-summary">Annotation guidelines, documentation disparities, and detection errors across patient groups in a corpus of 754 clinical notes.</p>
+            <div class="paper-actions"><a href="https://www.jmir.org/2026/1/e91089" target="_blank" rel="noopener">Article</a><button type="button" class="citation-button" data-citation="jmir" aria-label="Copy BibTeX for the JMIR paper">BibTeX</button><span class="paper-detail">28, e91089 · First author</span></div>
+          </article>
+          <article class="publication">
+            <p class="paper-meta"><span>2026</span><span>Journal of the American Medical Informatics Association</span></p>
+            <h3><a href="https://doi.org/10.1093/jamia/ocaf193" target="_blank" rel="noopener">Automated detection of stigmatizing language in Electronic Health Records (EHRs) using a multi-stage transfer learning approach</a></h3>
+            <p class="authors"><strong>Liyang Xue</strong>, A. M. Muntasir Rahman, Charles R. Senteio, Vivek K. Singh</p>
+            <p class="paper-summary">Adapting language models to clinical text and the detection task, with comparisons against conventional classifiers and prompted GPT-4o.</p>
+            <div class="paper-actions"><a href="https://doi.org/10.1093/jamia/ocaf193" target="_blank" rel="noopener">Article</a><button type="button" class="citation-button" data-citation="jamia" aria-label="Copy BibTeX for the JAMIA paper">BibTeX</button><span class="paper-detail">33(2), 283–294 · First author</span></div>
+          </article>
+          <article class="publication">
+            <p class="paper-meta"><span>2023</span><span>Electronics</span></p>
+            <h3><a href="https://doi.org/10.3390/electronics12234821" target="_blank" rel="noopener">Predicting Loneliness through Digital Footprints on Google and YouTube</a></h3>
+            <p class="authors">E. Ahmed*, <strong>Liyang Xue*</strong>, A. Sankalp, H. Kong, A. Matos, V. Silenzio, V. K. Singh</p>
+            <p class="paper-summary">Modeling loneliness from online activity and examining how different digital platforms contribute to measurement.</p>
+            <div class="paper-actions"><a href="https://doi.org/10.3390/electronics12234821" target="_blank" rel="noopener">Article</a><button type="button" class="citation-button" data-citation="electronics" aria-label="Copy BibTeX for the Electronics paper">BibTeX</button><span class="paper-detail">12(23), 4821 · *Equal contribution</span></div>
+          </article>
+        </div>
+        <div class="under-review">
+          <h3>Under review</h3>
+          <p class="manuscript-title">Human-Authored versus AI-Rewritten Manipulation: Linguistic Differences and Source Detection</p>
+          <p class="authors">Haein Kong, <strong>Liyang Xue</strong>, Ruixiang Tang, Vivek Singh</p>
+          <p class="paper-detail">Submitted to ACL Rolling Review, October 2026 cycle.</p>
+        </div>
+      </section>
+      <section id="datasets" class="content-section" aria-labelledby="datasets-title">
+        <div class="section-heading"><h2 id="datasets-title">Dataset</h2></div>
+        <article class="publication">
+          <p class="paper-meta"><span>2026</span><span>PhysioNet</span></p>
+          <h3><a href="https://physionet.org/content/mimic-iv-ext-gender-stigma/1.0.0/" target="_blank" rel="noopener">MIMIC-IV-Ext Gender-Expansive Patient Stigmatizing Language Annotations</a></h3>
+          <p class="authors"><strong>Liyang Xue</strong>, Mary Chayko, Vivek Singh</p>
+          <p class="paper-summary">Expert-reviewed annotations for stigmatizing language and misgendering in 754 MIMIC-IV-Note discharge summaries from 580 patients.</p>
+          <div class="paper-actions"><a href="https://physionet.org/content/mimic-iv-ext-gender-stigma/1.0.0/" target="_blank" rel="noopener">PhysioNet</a><button type="button" class="citation-button" data-citation="dataset" aria-label="Copy BibTeX for the PhysioNet dataset">BibTeX</button><span class="paper-detail">Version 1.0.0 · October 19, 2026</span></div>
+          <p class="project-status">Credentialed access through PhysioNet. <a href="https://doi.org/10.2196/91089" target="_blank" rel="noopener">Associated study</a></p>
+        </article>
+      </section>
+      <section id="research" class="content-section" aria-labelledby="research-title">
+        <div class="section-heading"><h2 id="research-title">Current research</h2></div>
+        <article class="research-project">
+          <h3>X-CART 2.0 Memory Engine</h3>
+          <p class="project-context">Clinical memory and evidence retrieval</p>
+          <p>I lead a study of how to reconstruct a patient’s changing history from clinical notes while preserving the source of each assertion. We evaluate the prototype on synthetic oncology histories and compare evidence retrieval on real discharge summaries. The work examines what a model can support from the records available at a given time.</p>
+          <p class="project-status">Manuscript in preparation for submission.</p>
+        </article>
+        <article class="research-project">
+          <h3>Repeat assessments for mental health monitoring</h3>
+          <p class="project-context">Questionnaire allocation and measurement</p>
+          <p>In this collaboration, we study whom to ask for a new questionnaire when collection capacity is limited. Retrospective simulations compare uncertainty-based selection with random allocation and examine how collection opportunities and prediction errors vary across demographic groups.</p>
+          <p class="project-status">Manuscript in preparation for submission.</p>
+        </article>
+        <article class="research-project">
+          <h3>Breast cancer care and disparities in Memphis</h3>
+          <p class="project-context">Neighborhood conditions and access to care</p>
+          <p>This collaborative study examines racial and neighborhood differences in breast cancer outcomes. I will lead planned analyses of where patients receive care and how service use varies across neighborhoods, using administrative claims and facility data.</p>
+        </article>
+        <article class="research-project">
+          <h3>RAG Repair Transfer</h3>
+          <p class="project-context">Evidence selection for question answering</p>
+          <p>I collaborate on methods for selecting and revising evidence for multi-hop question answering. The study compares model performance across benchmark datasets under limited evidence budgets. A manuscript is in preparation.</p>
+        </article>
+      </section>
+      <section id="teaching" class="content-section" aria-labelledby="teaching-title">
+        <div class="section-heading"><h2 id="teaching-title">Teaching</h2></div>
+        <p>I help students connect analytical choices to the questions they are trying to answer. I give feedback on how data are curated, how models are interpreted, and what the results can support.</p>
+        <div class="experience-entry"><div><h3>Data Analytics</h3><p>Lecturer · MI 561 · Rutgers University</p></div><p class="entry-date">2024–2025</p></div>
+        <div class="experience-entry"><div><h3>Information science and computing</h3><p>Teaching Assistant · Rutgers University</p><p class="course-list">Data in Context, Database Design and Management, Problem Solving with Data, Object-Oriented Programming, and Data Analytics.</p></div><p class="entry-date">2021–2025</p></div>
+        <div class="experience-entry"><div><h3>Essentials of Marketing</h3><p>Teaching Assistant · MAR 301 · Syracuse University</p></div><p class="entry-date">2020–2021</p></div>
+      </section>
+      <section id="service" class="content-section" aria-labelledby="service-title">
+        <div class="section-heading"><h2 id="service-title">Academic service</h2></div>
+        <div class="experience-entry"><div><h3>Program Committee Member</h3><p>11th International Workshop on Health Intelligence (W3PHIAI-27), held with AAAI-27.</p><p class="entry-note">Upcoming, February 2027</p></div><p class="entry-date">2027</p></div>
+        <div class="experience-entry"><div><h3>Journal Reviewer</h3><p>JAMIA Open</p></div><p class="entry-date">2026</p></div>
+      </section>
+      <footer class="site-footer"><p>© <span id="copyright-year">2026</span> Liyang Xue</p><a href="mailto:lxue1@uthsc.edu">Contact</a></footer>
+    </main>
+  </div>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="citation-dialog" aria-labelledby="citation-dialog-title">
+    <div class="dialog-heading"><h2 id="citation-dialog-title">BibTeX citation</h2><button type="button" id="close-citation" aria-label="Close citation">Close</button></div>
+    <textarea id="citation-text" readonly aria-label="BibTeX citation"></textarea><button type="button" id="select-citation">Select citation</button>
+  </dialog>
 </body>
 </html>
